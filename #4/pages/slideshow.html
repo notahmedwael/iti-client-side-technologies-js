@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        .slideshow-container {
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+        .controls{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        button{
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            background-color: #009879;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #007f63;
+        }
+
+        img{
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container" id="slider">
+    </div>
+
+    <div class="controls">
+        <button id="prev">Previous</button>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script src="../scripts/slideshow.js" defer></script>
+</body>
+</html>

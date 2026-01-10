@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marble Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .animation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            gap: 20px;
+        }
+
+        img {
+            height: 80px;
+            width: 80px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .moving {
+            animation: moveRight 1s forwards;
+        }
+
+        @keyframes moveRight {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(30px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container" id="animation">
+    </div>
+
+    <script src="../scripts/marble.js" defer></script>
+</body>
+</html>

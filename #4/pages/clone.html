@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .original{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width : 400px;
+            height: 400px;
+            background-color: aqua;
+            border-radius: 2rem;
+        }
+        .original-text{
+            color:black;
+        }
+        .original-text.can-hover:hover{
+            color:rgb(192, 33, 33);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="original">
+            <p class="original-text can-hover">
+                Click The Text To Clone me with a random color &#X1FAE3;
+            </p>
+        </div>
+    </div>
+
+    <script src="../scripts/clone.js" defer></script>
+</body>
+</html>
