@@ -16,7 +16,6 @@ displayCard.innerHTML += `
     <p><span>Welcome,</span> ${data.title}. ${data.name}</p>
     <p><span>Email:</span> ${data.email}</p>
     <p><span>Mobile:</span> ${data.mobile}</p>
-    <p><span>Age:</span> ${data.age}</p>
     <p><span>Gender:</span> ${data.gender}</p>
     <p><span>Address:</span> ${data.address}</p>
 `;
