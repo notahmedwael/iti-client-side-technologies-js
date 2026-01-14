@@ -1,0 +1,114 @@
+/**
+Reset first
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    line-height: 1.5;
+    min-height: 100vh;
+    display:flex;
+    gap: 10vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-main);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+:root {
+  /* Color Palette */
+  --color-primary: #3F9AAE;    /* Deep Teal */
+  --color-secondary: #79C9C5;  /* Soft Aqua */
+  --color-accent: #F96E5B;     /* Coral / Action Color */
+  --color-highlight: #FFE2AF;  /* Soft Sand / Cream */
+  --color-container: #213C51;
+
+  /* Surface & Text Variants */
+    --bg-main: #FFFFFF;
+    --bg-subtle: var(--color-highlight);
+    --text-main: #2D3436;
+    --text-on-primary: #FFFFFF;
+}
+
+.container {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-container);
+    height: fit-content;
+    width: 100%;
+}
+
+.user-card{
+    color: var(--text-main);
+    background-color: var(--color-primary);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+.user-card:hover{
+    cursor: pointer;
+    color: var(--text-on-primary);
+    scale: 1.05;
+}
+
+.active{
+    background-color: var(--color-accent);
+    color: var(--text-on-primary);
+    scale: 1.05;
+}
+
+.posts-card{
+    background-color: var(--bg-subtle);
+    color: var(--text-main);
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.posts-card h2 {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 0.5rem;
+}
+
+.post-title {
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    color: var(--color-container);
+    font-size: 1.2rem;
+}
+
+.post-body {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.75rem;
+    margin-top: 0.25rem;
+    line-height: 1.4;
+}
