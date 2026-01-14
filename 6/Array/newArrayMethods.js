@@ -1,10 +1,10 @@
 var fruits = ["apple", "strawberry", "banana", "orange", "mango"];
 
-const firstTest = fruits.every(s => typeof s === "string");
+const firstTest = fruits.every(fruit => typeof fruit === "string");
 
 console.log(firstTest);
 
-const secondTest = fruits.some(c => c.charAt(0) === 'a');
+const secondTest = fruits.some(fruit => fruit.charAt(0) === 'a');
 
 console.log(secondTest);
 
